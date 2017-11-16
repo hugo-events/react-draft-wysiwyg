@@ -24,7 +24,7 @@ class LayoutComponent extends Component {
 
   state: Object = {
     showModal: false,
-    linkTarget: '',
+    linkTarget: this.props.config.defaultTarget || "",
     linkTitle: '',
     linkTargetOption: this.props.config.defaultTargetOption,
   };
